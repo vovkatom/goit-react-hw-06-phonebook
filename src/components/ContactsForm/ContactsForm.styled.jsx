@@ -49,8 +49,7 @@ export const Btn = styled.button`
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
-  color: #ffffff;
-  background-color: #188ce8;
+  background-color: greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;

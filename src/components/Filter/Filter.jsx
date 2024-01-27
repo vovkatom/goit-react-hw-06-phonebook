@@ -11,7 +11,7 @@ const Filter = () => {
       <Label>
         Find contacts by name
         <Input
-          type="text"
+          type='text'
           value={filter}
           onChange={e => dispatch(filterOnContact(e.currentTarget.value))}
         ></Input>

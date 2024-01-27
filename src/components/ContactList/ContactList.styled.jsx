@@ -18,7 +18,7 @@ export const List = styled.li`
 export const ContactName = styled.span`
   min-width: 120px;
   margin-right: 10px;
-  color: #8b4513;
+  color: blue;
 `;
 export const ContactNumber = styled.span`
   min-width: 150px;
@@ -40,7 +40,6 @@ export const Btn = styled.button`
   letter-spacing: 0.06em;
   border-radius: 4px;
   color: #ff4500;
-  background-color: #deb887;
   display: flex;
   justify-content: center;
   align-items: center;

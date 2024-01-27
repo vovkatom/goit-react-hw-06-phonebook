@@ -5,7 +5,7 @@ import { Btn, Form, Input, Label } from './ContactsForm.styled';
 import { useSelector, useDispatch } from 'react-redux';
 import { addContacts, getContacts } from 'redux/slise';
 
-function ContactForm() {
+function ContactForm () {
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
 
@@ -57,8 +57,8 @@ function ContactForm() {
       <Label>
         Name
         <Input
-          type="text"
-          name="name"
+          type='text'
+          name='name'
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
@@ -69,16 +69,16 @@ function ContactForm() {
       <Label>
         Number
         <Input
-          type="tel"
-          name="number"
-          pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          type='tel'
+          name='number'
+          pattern='\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}'
+          title='Phone number must be digits and can contain spaces, dashes, parentheses and can start with +'
           required
           value={number}
           onChange={handlChange}
         />
       </Label>
-      <Btn type="submit">
+      <Btn type='submit'>
         Add contact
         <FaUserPlus style={iconStyles} size={20}></FaUserPlus>
       </Btn>

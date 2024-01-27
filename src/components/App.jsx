@@ -7,10 +7,10 @@ import Title from './Title';
 const App = () => {
   return (
     <Container>
-      <Title title="Phonebook"></Title>
+      <Title title='Phonebook'></Title>
       <ContactForm />
       <div>
-        <Title title="Contacts"></Title>
+        <Title title='Contacts'></Title>
         <Filter />
         <ContactList />
       </div>

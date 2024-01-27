@@ -23,9 +23,7 @@ export const Input = styled.input`
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:active,
-  &:focus {
+  &:hover {
     outline: 0;
     border: 2px solid #2196f3;
   }
