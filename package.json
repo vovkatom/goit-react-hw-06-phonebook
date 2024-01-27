@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "tests",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vovkatom.github.io/test/",
+  "homepage": "https://vovkatom.github.io/tests/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
