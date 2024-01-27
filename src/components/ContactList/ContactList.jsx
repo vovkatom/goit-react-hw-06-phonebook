@@ -15,7 +15,6 @@ import { useDispatch, useSelector } from 'react-redux';
 // Імпортую компоненту Massege
 import Massege from 'components/Massege';
 
-// Основна компонента ContactList
 const ContactList = () => {
   const svgStylePhon = { fill: '#006400', marginRight: '8px' };
   const svgStyleUser = { fill: '#FF4500', marginLeft: '8px' };
