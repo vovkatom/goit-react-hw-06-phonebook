@@ -1,5 +1,16 @@
 import styled from '@emotion/styled';
 
+const getRandomColor = () => {
+  // Генерація випадкового кольору у форматі #RRGGBB
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+
 export const Box = styled.ul`
   width: 100%;
   border-top: 2px solid #006400;
@@ -19,6 +30,7 @@ export const ContactName = styled.span`
   min-width: 120px;
   margin-right: 10px;
   color: blue;
+  animation: colorChange 2700ms infinite; 
 `;
 export const ContactNumber = styled.span`
   min-width: 150px;
@@ -33,19 +45,28 @@ export const Btn = styled.button`
   padding: 0 5px;
   cursor: pointer;
 
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-size: 18px;
   border-radius: 4px;
   color: #ff4500;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: colorChange 1700ms infinite; 
 
   &:hover {
-    transform: scale(1.05);
+    color: red;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: ${getRandomColor}; 
+    }
+    50% {
+      color: ${getRandomColor}; 
+    }
+    100% {
+      color: ${getRandomColor}; 
+    }
   }
 `;
