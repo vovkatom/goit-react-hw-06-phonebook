@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 const getRandomColor = () => {
-  // Генерація випадкового кольору у форматі #RRGGBB
   const letters = '0123456789ABCDEF';
   let color = '#';
   for (let i = 0; i < 6; i++) {
@@ -17,7 +16,6 @@ export const Box = styled.ul`
   margin: 20px auto;
   padding: 5px;
   list-style: none;
-
   font-size: 18px;
 `;
 export const List = styled.li`
@@ -52,6 +50,7 @@ export const Btn = styled.button`
   justify-content: center;
   align-items: center;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: ${getRandomColor};
   animation: colorChange 1700ms infinite; 
 
   &:hover {

@@ -1,4 +1,3 @@
-// Імпортую необхідні іконки та стилізовані компоненти з інших файлів
 import { AiOutlinePhone } from 'react-icons/ai';
 import { FaTrashAlt } from 'react-icons/fa';
 import {
