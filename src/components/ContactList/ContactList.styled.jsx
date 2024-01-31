@@ -48,5 +48,21 @@ export const Btn = styled.button`
   align-items: center;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: ${getRandomColor};
-  animation: colorChange 3000ms infinite;
+  animation: colorChange 1000ms infinite;
+
+  &:hover {
+    color: red;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: ${getRandomColor};
+    }
+    50% {
+      color: ${getRandomColor};
+    }
+    100% {
+      color: ${getRandomColor};
+    }
+  }
 `;
